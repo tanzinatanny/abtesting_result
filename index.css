@@ -1,0 +1,63 @@
+/* Put your style information here! */
+
+body{
+    margin: 0;
+    background-color: #222;
+    
+}
+
+.banner, nav{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    /* background-color: lightgoldenrodyellow; */
+    font-size: larger;
+    font-weight: 1500;
+    text-align: center;
+    padding: 20px;
+    color: rgb(74, 95, 32);
+}
+
+/* .item{
+    background-color:whitesmoke;
+
+    
+} */
+
+.components h1{
+    font-family: cursive;
+    color: rgb(140, 160, 86);
+}
+
+.link a {
+    color: rgb(140, 160, 86);      
+}
+
+.link a:hover{
+    color: rgb(74, 95, 32);
+}
+
+.components, footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.screenshot img{
+    max-height: 400px;
+    max-width: 600px;
+}
+
+
+
+
+.navbar{ background:#F97300;}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: rgb(236, 237, 215); color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}

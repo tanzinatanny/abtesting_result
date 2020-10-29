@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B testing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <!-- TODO: put your HTML code here! -->
+
+  
+    <!--Banner-->
+    <div class="banner col-12">
+      <h1><b>A/B Testing</b></h1>
+      <br>
+      <p>Statistical analysis for getting insight of the changes made in a cacti web store.
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+      <!--hamburger menu-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-right">
+          <!--ml-auto makes the navbar to the right in big screen-->
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#goal">Goal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prototypes">Prototypes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hypothesis">Hypothesis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#infographic">Infographic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#takeaway">Takeaway</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+      <!--Part:1-->
+      <div class="container-fluid components">
+
+        <div class="item p-3 my-3 text-center" id="goal">
+          <h1>Goal</h1>
+          <hr>
+
+          <p>We have made A and B version of the interface of a cactus store and ran user testing on them to measure statistical significance. </p>
+          <br>
+          
+        </div>
+
+        <div class="item p-3 my-3 text-center" id="prototypes">
+          <h1>Prototypes</h1>
+          <hr>
+
+          <div class="row">
+          
+            <div class="col-sm-12 col-lg-6">
+              <h3>Website A</h3>
+              <br>
+              <div class="screenshot">
+                <img src="images/version-A.png" alt="screenshot">
+                <br>
+              </div>  
+            </div>
+          
+            <div class="col-sm-12 col-lg-6">
+              <h3>Website B</h3>
+              <br>
+              <div class="screenshot">
+                <img src="images/version-B.png" alt="screenshot">
+                <br>
+              </div>
+            </div>         
+          </div>
+
+          <div class="text-center link">
+            <br>
+            <a href="https://morning-caverns-03860.herokuapp.com/" alt="version B">Link to Cacti Store (Version A/B)</a>
+          </div> 
+
+        </div>
+
+        <br>
+        
+        <div class="item p-3 my-3 " id="hypothesis">
+          <h1 class="text-center">Hypothesis</h1>
+          <hr>
+
+          <h2><u>Time to completion</u></h2>
+          <br>
+
+          <p><b>Null Hypothesis</b> : Any changes between the A and B version of the website does not 
+          change the time to complete for the task of adding items in the cart</p>
+
+          <p><b>Alternative Hypothesis</b> : Version A works better by reducing time to completion of the task of adding
+          items in the the cart within a constraint than version B</p>
+
+          <p><b><em>Reason</em></b>: Version A has the items in a horizontal list view and the cart is moved to the top within the same page view of the website whereas 
+          in the version B, each item takes up the whole page view and uses scroll view until it reaches the cart is at the bottom of the webpage. Therefore, the
+        task of adding items in the cart should take more time in version B, thus version A should work better in this case.</p>
+
+        <br>
+
+          <h2><u>Return rate</u></Return></h2>
+          <br>
+          
+          <p><b>Null Hypothesis</b> : Any changes between the A and B version of the website does not
+          change the return rate for the task of adding items in the cart</p>
+          
+          <p><b>Alternative Hypothesis</b> : Version A works better by reducing time to completion of the task of adding
+          items in the the cart within a constraint than version B</p>
+
+          <p><b><em>Reason</em></b>: Vesrion A has the cart icon moved to the top within the same page view of the website along with the listed items 
+            whereas in the version B, the cart is at the bottom of the webpage. Therefore, version A facilitates memorability as the user can see the number
+            of items added in the cart easily unlike in version B. </p>
+         
+        </div>
+
+
+        <div class="item p-3 my-3 text-center" id="collection">
+          <h1>Data Collection Process</h1>
+          <hr>
+          <p>
+            Collected the raw data from the student activity during the studio-6(20 users) and processed the data by cleaning the raw data
+            into usable data.
+            For this, I sorted the data sheet by users and calculated the time spent by each user on the website by subtracting
+            the entry or page load time
+            from the exit time. The return rate was calculated by looking into the users activity of making a return from the
+            cart and calculating the occurances
+            as caterorical data item.
+          </p>
+        </div>
+
+        
+        <div class="item p-3 my-3 text-center" id="infographic">
+          <h1>Infographic of the Process</h1>
+          <hr>
+          <br>
+
+          <div class="style-guide">
+            <img src="images/abtesting_infographic.png" alt="infographic">
+          </div>         
+        </div>
+
+        
+
+        <div class="item p-3 my-3 text-center" id="takeaway">
+          <h1>Takeaway</h1>
+          <hr>
+          <p>The website's landing page is redesigned making it fully responsive. The necessary navigation utilities are added to go to other pages and remove 
+            much information from the home page. All the problems initially detected were addressed to find proper solution. 
+          </p>
+        </div>     
+      </div>
+
+      
+
+    <footer class="py-3 bg-light">
+      <div class="container footer">
+        <p class="m-0 text-center text-black">resource: template from www.canva.com </p>
+      </div>
+  
+  
+  </div>
+
+
+  </body>
+</html>
